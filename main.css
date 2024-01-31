@@ -1,0 +1,93 @@
+
+
+body {
+    overflow: hidden;
+    background-color: rgb(255, 254, 236);
+}
+
+.map {
+    scale: 0.5;
+    position: absolute;
+    height: 1000px;
+    width: 1000px;
+    background-color: rgb(255, 255, 255);
+}
+
+.drag {
+    position: absolute;
+    z-index: 2;
+}
+
+.settings {
+        display: flex;
+    background-color: rgba(0, 0, 0, 0.648);
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    width: 20em;
+    bottom: 1em;
+    z-index: 5;
+    overflow-x: auto;
+    overflow-y: scroll;
+    flex-direction: column;
+    padding: 0.5em;
+}
+
+.buttons {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.648);
+    position: absolute;
+    flex-direction: row;
+    width: fit-content;
+    top: 1em;
+    right: 1em;
+    z-index: 5;
+    padding: 0.5em;
+    
+}
+
+.setting div {
+    display: flex;
+    flex-direction: row;
+}
+
+span {
+    min-width: 2em;
+    background-color: transparent;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.774);
+    padding: 0.2em;
+}
+span:focus {
+    border: 2px black solid;
+}
+
+.no-point > * {
+    pointer-events: none;
+}
+
+.person h3 {
+    position: absolute;
+    bottom: 0;
+    text-shadow: 2px 2px 5px white;
+    color: rgb(60, 232, 83);
+}
+
+.person {
+    outline: red 1px solid;
+}
+
+img {
+    height: 5em;
+    width: 5em;
+}
+
+.drag:not(.map):hover {
+    z-index: 5;
+}
+
+.map .bg {
+    height: 1000px;
+    width: 1000px;
+    pointer-events: none;
+}
