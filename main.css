@@ -57,6 +57,7 @@ span {
     border: none;
     background-color: rgba(255, 255, 255, 0.774);
     padding: 0.2em;
+    font-size: 1.5em;
 }
 span:focus {
     border: 2px black solid;
@@ -70,11 +71,14 @@ span:focus {
     position: absolute;
     bottom: 0;
     text-shadow: 2px 2px 5px white;
-    color: rgb(60, 232, 83);
+    color: rgb(0, 0, 0);
+    background-color: white;
 }
 
 .person {
     outline: red 1px solid;
+    border-radius: 100%;
+    overflow: hidden;
 }
 
 img {
