@@ -103,7 +103,7 @@ function newPerson(name) {
   let newEl = document.createElement("div");
   let title = document.createElement("h3");
   let img = document.createElement("img");
-  img.src = "https://picsum.photos/500";
+  img.src ="https://picsum.photos/" + parseInt(Math.random() * 999).toString();
 
   title.innerHTML = name;
   newEl.className = 
